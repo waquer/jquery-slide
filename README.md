@@ -1,1 +1,2 @@
-# jquery-slide for PC
+# jquery-slide for pc
+# jquery-slider for mobile
