@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery-slide demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://lib.sinaapp.com/js/jquery/3.1.0/jquery-3.1.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="slide_box">
+        <ul class="slide_pic">
+            <li style="background:#e25353"></li>
+            <li style="background:#ffe96c"></li>
+            <li style="background:#77f582"></li>
+            <li style="background:#4bf5f5"></li>
+            <li style="background:#7c5fff"></li>
+        </ul>
+        <ul class="slide_tab"></ul>
+        <a href="javascript:" class="slide_nav slide_prev">&lt;</a>
+        <a href="javascript:" class="slide_nav slide_next">&gt;</a>
+    </div>
+    <script>
+        $(".slide_box").init_slide();
+    </script>
+</body>
+</html>

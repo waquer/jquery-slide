@@ -1,0 +1,164 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.slide_box {
+	position: relative;
+	overflow: hidden;
+	height: 370px;
+	min-width: 1200px
+}
+
+.slide_pic {
+	z-index: 0;
+	position: relative;
+	height: 100%;
+}
+
+.slide_pic li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f2f2f2 center center no-repeat;
+	background-size: auto 100%;
+	z-index: 0;
+}
+
+.slide_pic .show {
+	z-index: 5;
+}
+
+.slide_pic .next {
+	z-index: 3;
+}
+
+.slide_pic li a {
+	display: block;
+	height: 100%;
+}
+
+.slide_pic li span {
+	display: none;
+}
+
+.slide_tab {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	z-index: 10;
+	background: rgba(255, 255, 255, 0.4);
+	padding: 4px;
+	border-radius: 10px;
+}
+
+.slide_tab li {
+	float: left;
+	background: #fff;
+	margin: 0 4px;
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	cursor: pointer;
+	list-style: none;
+}
+
+.slide_tab .h {
+	background: #e58;
+}
+
+.slide_nav {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	line-height: 370px;
+	font-family: SimSun, monospace;
+	font-size: 80px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	transition: 0.25s;
+	opacity: 0.6;
+	cursor: pointer;
+	z-index: 5;
+	text-shadow: 0 0 10px #999;
+	text-decoration: none;
+}
+
+.slide_nav:hover {
+	color: #fff;
+	opacity: 0.9;
+	text-shadow: 0 0 10px #000;
+}
+
+.slide_nav:active {
+	opacity: 0.7;
+}
+
+.slide_prev {
+	left: 0;
+	right: 50%;
+	margin-right: 550px;
+}
+
+.slide_next {
+	right: 0;
+	left: 50%;
+	margin-left: 550px;
+}
+
+.slider {
+	position: relative;
+	overflow: hidden;
+}
+
+.slider .viewport {
+	height: 100%;
+	position: relative;
+	white-space: nowrap;
+	font-size: 0;
+}
+
+.slider .viewport .sitem {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: no-repeat center center;
+	background-size: cover;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+
+.slider .viewport .sitem img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.slider .dots {
+	position: absolute;
+	text-align: center;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	line-height: 20px;
+}
+
+.slider .dots li {
+	cursor: pointer;
+	display: inline-block;
+	width: 18px;
+	height: 4px;
+	margin: 4px;
+	border-radius: 2px;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.4);
+}
+
+.slider .dots .h {
+	background: rgba(255, 255, 255, 0.9);
+}
